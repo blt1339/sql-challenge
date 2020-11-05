@@ -9,7 +9,7 @@ SELECT
     salaries.salary
 FROM 
 	employees
-LEFT OUTER JOIN salaries ON
+JOIN salaries ON
 	employees.emp_no = salaries.emp_no;
 	
 	
@@ -35,9 +35,9 @@ SELECT
 	employees.first_name
 FROM 
 	dept_manager
-LEFT OUTER JOIN departments ON
+JOIN departments ON
 	dept_manager.dept_no = departments.dept_no
-LEFT OUTER JOIN employees ON
+JOIN employees ON
 	dept_manager.emp_no = employees.emp_no;
 
 
@@ -51,9 +51,9 @@ SELECT
 	departments.dept_name
 FROM 
 	employees
-LEFT OUTER JOIN dept_emp ON
+JOIN dept_emp ON
 	employees.emp_no = dept_emp.emp_no
-LEFT OUTER JOIN departments ON
+JOIN departments ON
 	dept_emp.dept_no = departments.dept_no;
 
 
@@ -81,9 +81,9 @@ SELECT
 	departments.dept_name
 FROM 
 	employees
-LEFT OUTER JOIN dept_emp ON
+JOIN dept_emp ON
 	employees.emp_no = dept_emp.emp_no
-LEFT OUTER JOIN departments ON
+JOIN departments ON
 	dept_emp.dept_no = departments.dept_no
 WHERE
 	departments.dept_name = 'Sales';
@@ -98,9 +98,9 @@ SELECT
 	departments.dept_name
 FROM 
 	employees
-LEFT OUTER JOIN dept_emp ON
+JOIN dept_emp ON
 	employees.emp_no = dept_emp.emp_no
-LEFT OUTER JOIN departments ON
+JOIN departments ON
 	dept_emp.dept_no = departments.dept_no
 WHERE
 	departments.dept_name = 'Sales'

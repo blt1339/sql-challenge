@@ -27,13 +27,10 @@ hire_date DATE
 
 salaries
 ------------
-emp_no INT PK FK >- employees.emp_no
+emp_no INT PK FK - employees.emp_no
 salary INT
 
 titles
 ------------
 title_id PK VARCHAR(10)
 title VARCHAR(25)
-
-
-
