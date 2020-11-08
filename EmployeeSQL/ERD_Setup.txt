@@ -21,7 +21,7 @@ emp_no PK INT
 emp_title_id VARCHAR(20) FK >- titles.title_id 
 birth_date DATE
 first_name VARCHAR(25)
-last_name VARHCAR(25)
+last_name VARCHAR(25)
 sex CHAR
 hire_date DATE
 
