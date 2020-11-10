@@ -24,6 +24,21 @@ Inside the EmployeeSQL directory there are the following:
         password = ""
         port_no = ""
         db_name = "EmployeeSQL"
+# Setup Information
+In order to run the different portions of this project,  the following needs to be done.
+* Create config.py with the user, password, and port for pgAdmin4 and use EmployeeSQL as the database name
+* Create EmployeeSQL database using pgAdmin4
+* Open EmployeeSQL_Creation.sql and execute
+* Manually import the data from the data directory in the following order (has headers and deliminted by ,):
+    * departments
+    * titles
+    * employees
+    * dept_emp
+    * dept_manager
+    * salaries
+
+* Open EmployeeSQL_Query.sql and run each query
+* Open the Jupyter Notebook EmployeeSQL_Bonus_Analysis.ipynb and execute Restart & Run All
 
 # ERD Diagram
 ![ERD_Diagram.png](EmployeeSQL/ERD_Diagram.png)
